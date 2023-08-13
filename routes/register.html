@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Online voting-registration</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <style>
+            .ad{
+                width: 31%;
+            }
+        </style>
+        <h1 style="color: aliceblue ; font-family: Castellar; font-size: 50px;">ONLINE VOTING SYSTEM</h1>
+        <hr>
+        <h2 style="color: rgb(218, 218, 218); font-family: Times New Roman ; font-size: 40px;">REGISTRATION</h2>
+        <br><br>
+
+        <div class="container">
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter name">
+            <input type="number" name="mobile" placeholder="Enter mobile"><br><br>
+            <input type="password" name="password" placeholder="Password">
+            <input type="confirm password" name="cpassword" placeholder="Confirm password"><br><br>
+            <input class="ad" type="text" name="address" placeholder="Address"><br><br>
+            
+            <div class="img_holder" style="color: rgb(255, 253, 251);">
+                Upload image : <input type="file" name="photo" placeholder=""><br><br>
+            </div><br>
+
+            <div class="img_holder" style="color: rgb(255, 255, 255); ">
+                Select role : <select name="role" id="">
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select><br><br>
+            </div> <br>
+            </form></div>
+           
+            <button class="btnr">Register</button><br><br>
+            <div class="name">already user?</div><a href="index.html" style="color: white;">Login here</a>
+        </form>
+    </body>
+</html>
